@@ -172,7 +172,7 @@ var MAP_API = {
 			map.panTo(position);
 		})
 		cross.addEventListener('click',() => {
-			let text = "Press a button!\nEither OK or Cancel.";
+			let text = "Are u sure do delete this airport ?";
 			if (confirm(text) == true) {
 				this.deleteData(airport)
 			} 			
