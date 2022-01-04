@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Google Map API</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKKM12U3DGYq4JUbpUwcaSQh_Vy4bI2nk&callback=MAP_API.initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div class="popup" class="text-primary">
+      <form class="formPopup">
+        <span>edit airport</span><br/>
+        <span>name</span>
+        <input class="inputName" name="name" /><br/>
+        <span>lat</span>
+        <input class="inputLat" name="latitude" /><br/>
+        <span>long</span>
+        <input class="inputLong" name="longitude" /><br/>
+        <input class="inputId" name="id" type="hidden" /><br/>
+        <input type="submit" value="Submit">
+        <div class="crossPopup">x</div>
+      </form>
+    </div>
+    <div id="map"></div>
+    <div id="airports">
+      <h4>Liste des aéroports</h4>
+      <ul id="airports-list"></ul>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
